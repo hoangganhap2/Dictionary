@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=prompt("Nhập vào từ khóa");
+    let eng=["one","two","three","four","five"];
+    let vne=["một","hai","ba","bốn","năm"];
+    let index=-3;
+    for(let i=0;i<a.length;i++){
+        if(a==eng[i]){
+            index=i;
+            break;
+        }
+    }
+    if(index==-3){
+        alert("Không có trong từ điển");
+    }else {
+        document.writeln(vne[index])
+    }
+
+</script>
+</body>
+</html>
